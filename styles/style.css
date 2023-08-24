@@ -1,0 +1,83 @@
+@import url('./reset.css');
+
+body {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgb(197, 198, 199);
+}
+
+.wrapper {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: rgb(49, 49, 49);
+    border-bottom: 10px solid rgb(31, 148, 250);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(197, 198, 199);
+}
+
+li {
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-category {
+    position: relative;
+}
+
+.drop-down-item-list {
+    display: none;
+}
+
+.nav-category:hover {
+    background-color: rgb(31, 148, 250);
+    border: 2px solid blue;
+}
+
+.nav-category:hover .drop-down-item-list {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: -250px;
+    background-color: rgb(31, 148, 250);
+    border: 2px solid blue;
+}
+
+.drop-down-sub-item-list {
+    display: none;
+}
+
+.item::after {
+    content: '+';
+    margin-left: 200px;
+}
+
+.item-drop {
+    position: relative;
+    border: 2px solid blue;
+}
+
+.item-drop:hover .drop-down-sub-item-list {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    right: -270px;
+    background-color: rgb(31, 148, 250);
+    border: 2px solid blue;
+}
+
+.sub-item {
+    border: 2px solid blue;
+}

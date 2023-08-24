@@ -1,6 +1,6 @@
 @import url('./reset.css');
 
-body {
+body *{
     font-family: sans-serif;
     font-size: 30px;
     color: rgb(197, 198, 199);
@@ -19,7 +19,6 @@ header {
 
 a {
     text-decoration: none;
-    color: rgb(197, 198, 199);
 }
 
 li {
@@ -41,7 +40,8 @@ li {
 
 .nav-category:hover {
     background-color: rgb(31, 148, 250);
-    border: 2px solid blue;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
 }
 
 .nav-category:hover .drop-down-item-list {
@@ -51,7 +51,6 @@ li {
     left: 0;
     right: -250px;
     background-color: rgb(31, 148, 250);
-    border: 2px solid blue;
 }
 
 .drop-down-sub-item-list {
@@ -75,9 +74,10 @@ li {
     left: 100%;
     right: -270px;
     background-color: rgb(31, 148, 250);
-    border: 2px solid blue;
 }
 
 .sub-item {
-    border: 2px solid blue;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    border-top: 2px solid blue;
 }
